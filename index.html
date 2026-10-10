@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS2 Ban & Pick</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">B/P</span><span>CS2 <b>BAN & PICK</b></span></a><span class="local-tag">LOCAL MATCH TOOL</span></header>
+    <main class="editor-shell">
+        <section class="intro">
+            <div>
+                <p class="eyebrow">MATCH SETUP / 01</p>
+                <h1>安排你的<br><em>地图顺序。</em></h1>
+                <p class="subcopy">设置队伍名称与地图流程，打开播放页后按顺序揭晓。</p>
+            </div>
+            <div class="hero-stamp">MAP<br>VETO<br><span>CS2</span></div>
+        </section>
+        <section class="setup-panel">
+            <div class="section-heading">
+                <div><span class="step">01</span>
+                    <h2>对阵信息</h2>
+                </div><span class="quiet">所有内容仅保存在当前浏览器</span>
+            </div>
+            <div class="teams">
+                <div class="team-edit"><label class="field team-a"><span>队伍 A · 左侧</span><input id="teamA" maxlength="22" value="LVG" placeholder="输入队伍名称"></label>
+                    <div class="logo-picker"><img id="teamLogoAPreview" class="team-logo-preview empty" src="assets/images/logo_CT_default.png" alt="队伍 A 图标预览"><label class="logo-upload">上传图标<input id="teamLogoAFile" type="file" accept="image/*"></label><button id="teamLogoAClear" type="button" class="clear-logo">清除</button></div>
+                </div>
+                <div class="versus">VS</div>
+                <div class="team-edit"><label class="field team-b"><span>队伍 B · 右侧</span><input id="teamB" maxlength="22" value="TYLOO" placeholder="输入队伍名称"></label>
+                    <div class="logo-picker"><img id="teamLogoBPreview" class="team-logo-preview empty" src="assets/images/logo_T_default.png" alt="队伍 B 图标预览"><label class="logo-upload">上传图标<input id="teamLogoBFile" type="file" accept="image/*"></label><button id="teamLogoBClear" type="button" class="clear-logo">清除</button></div>
+                </div>
+            </div>
+        </section>
+        <section class="setup-panel map-panel">
+            <div class="section-heading">
+                <div><span class="step">02</span>
+                    <h2>地图流程</h2>
+                </div><span class="quiet">选择 3–7 张地图，可拖动或用箭头调整顺序</span>
+            </div>
+            <div id="mapList" class="map-list"></div>
+            <div class="add-row"><select id="addMap" aria-label="选择要添加的地图"></select><button id="addButton" class="add-button">＋ 添加地图</button><span class="map-count" id="mapCount"></span></div>
+        </section>
+        <div class="bottom-actions">
+            <p><span class="live-dot"></span>播放页会自动保存当前设置</p><button id="playButton" class="play-button">打开播放页面 <span>↗</span></button>
+        </div>
+    </main>
+    <footer>CS2 BAN & PICK <span>·</span> MADE FOR MATCH DAY</footer>
+    <script src="src/app.js"></script>
+</body>
+
+</html>

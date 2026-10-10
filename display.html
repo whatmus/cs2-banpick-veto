@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ban & Pick · Match</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="stage-body">
+    <div class="stage-top"><a class="stage-brand" href="index.html">B/P <span>BAN & PICK</span></a>
+        <div class="stage-meta"><span class="live-dot"></span> MAP VETO <i>/</i> MATCH DAY</div><a href="index.html" class="edit-link">编辑赛程 ↗</a>
+    </div>
+    <main class="stage">
+        <div class="stage-title">
+            <div class="stage-rule"></div>
+            <div class="teams-bar"><span id="stageTeamA">LVG</span><span class="versus-badge"><b>VS</b></span><span id="stageTeamB">TYLOO</span></div>
+            <h1>BAN<span>&</span>PICK</h1>
+        </div>
+        <div id="cards" class="cards"></div>
+        <div class="stage-footer"><span id="progress">WAITING TO BEGIN</span><span>MAP SEQUENCE <b id="sequenceCount">07</b></span></div>
+        <div class="play-controls"><button id="replay" type="button" title="重新播放" aria-label="重新播放">↻</button><button id="skip" type="button" title="全部揭晓" aria-label="全部揭晓">→</button></div>
+    </main>
+    <script src="src/app.js"></script>
+</body>
+
+</html>
